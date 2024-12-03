@@ -1,0 +1,832 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VERA - Luxury Authentication Platform</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-black">
+    <!-- Slide 1: Title -->
+    <div class="slide active" id="slide1">
+        <div class="content-container flex items-center justify-between px-12">
+            <div class="flex flex-col max-w-2xl">
+                <div class="text-6xl font-bold mb-6 glow-text">VERA</div>
+                <div class="text-2xl text-gray-300 mb-8">Verification Enhancement and Resource Authentication</div>
+                <div class="accent-border p-8 rounded-lg text-left">
+                    <p class="text-xl">Revolutionizing Luxury Authentication Through Blockchain and NFC Technology</p>
+                </div>
+            </div>
+            <div class="phone-mockup">
+                <div class="phone-screen">
+                    <!-- Authentication Interface Mockup -->
+                    <div   class="w-full h-full">
+                        <video autoplay loop muted class="w-full h-full object-cover">
+                            <source src="./assets/DisplayVideo.mp4" type="video/mp4">
+
+                        </video>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 2: Vision & Mission -->
+    <div class="slide" id="slide2">
+        <div class="content-container flex flex-col items-center justify-center">
+            <div class="text-4xl font-bold mb-16 glow-text">Our Vision & Mission</div>
+            <div class="accent-border p-12 rounded-lg max-w-4xl w-full">
+                <p class="text-2xl mb-12 text-center">Vision: To create an unbreakable bridge between physical luxury and digital authenticity.</p>
+                <p class="text-2xl text-center">Mission: Empower brands and collectors with seamless verification technology that defines the future of luxury ownership.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 3: Product Keywords -->
+    <div class="slide" id="slide3">
+        <div class="content-container flex flex-col items-center justify-center">
+            <div class="text-4xl font-bold mb-16 glow-text">Core Innovation</div>
+            <div class="grid grid-cols-2 gap-12 w-full max-w-5xl">
+                <div class="market-card p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-4 text-purple-400">Seamless Authentication</h3>
+                    <p class="text-lg">Proximity-based NFC verification with instant digital display</p>
+                </div>
+                <div class="market-card p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-4 text-purple-400">Digital Twin Technology</h3>
+                    <p class="text-lg">Blockchain-backed digital representation of physical luxury items</p>
+                </div>
+                <div class="market-card p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-4 text-purple-400">Smart Ownership</h3>
+                    <p class="text-lg">NFT-powered ownership tracking and transfer system</p>
+                </div>
+                <div class="market-card p-8 rounded-lg">
+                    <h3 class="text-2xl font-bold mb-4 text-purple-400">App-Free Experience</h3>
+                    <p class="text-lg">Native NFC integration requires no additional software</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 4: Problems -->
+    <div class="slide" id="slide4">
+        <div class="content-container flex flex-col items-center justify-center">
+            <div class="text-4xl font-bold mb-16 glow-text">Market Challenges</div>
+            <div class="grid gap-8 w-full max-w-5xl">
+                <div class="problem-item p-8 rounded-lg">
+                    <div class="text-2xl font-bold mb-3">Counterfeit Impact</div>
+                    <p class="text-gray-300 text-lg">$509 billion annual impact on global economy with 3.3% of global trade affected</p>
+                </div>
+                <div class="problem-item p-8 rounded-lg">
+                    <div class="text-2xl font-bold mb-3">Fragmented Authentication</div>
+                    <p class="text-gray-300 text-lg">Lack of unified verification systems leading to diminished consumer trust</p>
+                </div>
+                <div class="problem-item p-8 rounded-lg">
+                    <div class="text-2xl font-bold mb-3">Limited Brand Access</div>
+                    <p class="text-gray-300 text-lg">Limited direct channel between luxury brands and valuable collectors</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Slide 5: Market Opportunity -->
+    <div class="slide" id="slide5">
+        <div class="content-container flex flex-col items-center justify-center">
+            <div class="text-4xl font-bold mb-16 glow-text">Market Opportunity</div>
+            <div class="grid grid-cols-3 gap-8 w-full max-w-6xl">
+                <div class="market-card p-10 rounded-lg text-center">
+                    <div class="text-4xl font-bold mb-6">$392B</div>
+                    <div class="text-xl mb-4">Luxury Goods Market</div>
+                    <div class="text-sm text-purple-400">Growing from $284B (2023) to $392B (2030)</div>
+                </div>
+                <div class="market-card p-10 rounded-lg text-center">
+                    <div class="text-4xl font-bold mb-6">$294.23B</div>
+                    <div class="text-xl mb-4">Collectibles Market</div>
+                    <div class="text-sm text-purple-400">CAGR of 5.5% (2024-2030)</div>
+                </div>
+                <div class="market-card p-10 rounded-lg text-center">
+                    <div class="text-4xl font-bold mb-6">$84.5B</div>
+                    <div class="text-xl mb-4">Sneakers Market</div>
+                    <div class="text-sm text-purple-400">CAGR of 5.22% (2024-2029)</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Add this new slide after slide 5 in the HTML body -->
+<div class="slide" id="slide6">
+    <div class="content-container flex flex-col items-center  justify-center">
+        <div class="text-4xl font-bold mb-16 glow-text">The VERA Solution</div>
+        <div class="grid grid-cols-2 gap-12 w-full max-w-6xl">
+            <!-- Left side: Process Flow -->
+            <div class="space-y-8">
+                <div class="market-card p-8 rounded-lg relative">
+                    <div class="absolute -left-4 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-purple-400 rounded-full flex items-center justify-center text-black font-bold">1</div>
+                    <h3 class="text-xl font-bold mb-3 text-purple-400">Smart Product Registration</h3>
+                    <p class="text-gray-300">Embedded NFC tags create unique digital identities for luxury items, permanently linked to blockchain verification.</p>
+                </div>
+                
+                <div class="market-card p-8 rounded-lg relative">
+                    <div class="absolute -left-4 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-purple-400 rounded-full flex items-center justify-center text-black font-bold">2</div>
+                    <h3 class="text-xl font-bold mb-3 text-purple-400">Proximity Authentication</h3>
+                    <p class="text-gray-300">Seamless verification through proximity detection (0.5-0.75m) with instant visual confirmation.</p>
+                </div>
+                
+                <div class="market-card p-8 rounded-lg relative">
+                    <div class="absolute -left-4 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-purple-400 rounded-full flex items-center justify-center text-black font-bold">3</div>
+                    <h3 class="text-xl font-bold mb-3 text-purple-400">Digital Twin Creation</h3>
+                    <p class="text-gray-300">Each product maintains a digital counterpart with complete ownership history and authentication data.</p>
+                </div>
+            </div>
+            
+            <!-- Right side: Features -->
+            <div class="flex flex-col justify-start ">
+                <div class="accent-border p-12 rounded-lg mb-8">
+                    <h3 class="text-2xl font-bold mb-6 text-center">Key Features</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-center">
+                            <div class="w-2 h-2 bg-purple-400 rounded-full mr-3"></div>
+                            <span>App-free verification experience</span>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-2 h-2 bg-purple-400 rounded-full mr-3"></div>
+                            <span>Blockchain-secured ownership records</span>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-2 h-2 bg-purple-400 rounded-full mr-3"></div>
+                            <span>Instant authentication display</span>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-2 h-2 bg-purple-400 rounded-full mr-3"></div>
+                            <span>Tamper-proof NFC technology</span>
+                        </li>
+                        <li class="flex items-center">
+                            <div class="w-2 h-2 bg-purple-400 rounded-full mr-3"></div>
+                            <span>Seamless ownership transfers</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="market-card p-10 rounded-lg text-center">
+                    <p class="text-purple-400 font-bold">Enhanced Security</p>
+                    <p class="text-sm text-gray-300 mt-2">Multi-layer verification system combining physical NFC tags with blockchain security</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add this new slide after slide 6 in the HTML body -->
+<div class="slide" id="slide7">
+    <div class="content-container flex flex-col items-center justify-center">
+        <div class="text-4xl font-bold mb-12 glow-text">Revenue Streams</div>
+        
+        <!-- Interactive Business Model Cards -->
+        <div class="grid grid-cols-2 gap-8 w-full max-w-6xl">
+            <!-- Hardware & Brand Collaboration -->
+            <div class="flex flex-col space-y-6">
+                <div class="revenue-card p-8 rounded-lg hover-expand">
+                    <div class="flex items-start justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4 text-purple-400">Hardware Integration</h3>
+                            <div class="flex items-center mb-4">
+                                <div class="text-3xl font-bold mr-2">$2.5</div>
+                                <div class="text-gray-400">per unit</div>
+                            </div>
+                        </div>
+                        <div class="revenue-icon">
+                            <div class="w-12 h-12 bg-purple-400 rounded-full flex items-center justify-center">
+                                <div class="text-black text-xl font-bold">H</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="revenue-details">
+                        <div class="text-sm text-gray-300 mb-2">• Custom NFC hardware for luxury items</div>
+                        <div class="text-sm text-gray-300 mb-2">• Bulk pricing for major brands</div>
+                        <div class="text-sm text-gray-300">• Integration support included</div>
+                    </div>
+                </div>
+
+                <div class="revenue-card p-8 rounded-lg hover-expand">
+                    <div class="flex items-start justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4 text-purple-400">Brand Analytics</h3>
+                            <div class="flex items-center mb-4">
+                                <div class="text-3xl font-bold mr-2">$999</div>
+                                <div class="text-gray-400">monthly</div>
+                            </div>
+                        </div>
+                        <div class="revenue-icon">
+                            <div class="w-12 h-12 bg-purple-400 rounded-full flex items-center justify-center">
+                                <div class="text-black text-xl font-bold">B</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="revenue-details">
+                        <div class="text-sm text-gray-300 mb-2">• Real-time customer demographics</div>
+                        <div class="text-sm text-gray-300 mb-2">• Product interaction analytics</div>
+                        <div class="text-sm text-gray-300">• Market trend insights</div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Marketplace & Marketing -->
+            <div class="flex flex-col space-y-6">
+                <div class="revenue-card p-8 rounded-lg hover-expand">
+                    <div class="flex items-start justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4 text-purple-400">Resale Marketplace</h3>
+                            <div class="flex items-center mb-4">
+                                <div class="text-3xl font-bold mr-2">2.5%</div>
+                                <div class="text-gray-400">per transaction</div>
+                            </div>
+                        </div>
+                        <div class="revenue-icon">
+                            <div class="w-12 h-12 bg-purple-400 rounded-full flex items-center justify-center">
+                                <div class="text-black text-xl font-bold">M</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="revenue-details">
+                        <div class="text-sm text-gray-300 mb-2">• Secure P2P transactions</div>
+                        <div class="text-sm text-gray-300 mb-2">• Instant authentication</div>
+                        <div class="text-sm text-gray-300">• Automated ownership transfer</div>
+                    </div>
+                </div>
+
+                <div class="revenue-card p-8 rounded-lg hover-expand">
+                    <div class="flex items-start justify-between">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-4 text-purple-400">Marketing Solutions</h3>
+                            <div class="flex items-center mb-4">
+                                <div class="text-3xl font-bold mr-2">15%</div>
+                                <div class="text-gray-400">of ad spend</div>
+                            </div>
+                        </div>
+                        <div class="revenue-icon">
+                            <div class="w-12 h-12 bg-purple-400 rounded-full flex items-center justify-center">
+                                <div class="text-black text-xl font-bold">A</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="revenue-details">
+                        <div class="text-sm text-gray-300 mb-2">• Targeted customer acquisition</div>
+                        <div class="text-sm text-gray-300 mb-2">• In-app promotional space</div>
+                        <div class="text-sm text-gray-300">• Brand campaign management</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Revenue Projection Bar -->
+        <!-- Revenue Projection Bar -->
+<div class="w-full max-w-6xl mt-12">
+    <div class="market-card p-6 rounded-lg">
+        <!-- Header -->
+        <div class="flex items-center justify-between mb-4">
+            <div class="text-lg font-bold text-gray-200">Projected Annual Revenue Mix</div>
+            <div class="text-sm text-gray-400">Year 1</div>
+        </div>
+
+        <!-- Revenue Bar -->
+        <div class="flex mt-4 h-8 rounded-lg overflow-hidden border border-gray-700">
+            <div class="bg-purple-400" style="flex: 2" title="Hardware: 40%"></div>
+            <div class="bg-purple-500" style="flex: 1.25" title="Analytics: 25%"></div>
+            <div class="bg-purple-600" style="flex: 1" title="Marketplace: 20%"></div>
+            <div class="bg-purple-700" style="flex: 0.75" title="Marketing: 15%"></div>
+        </div>
+
+        <!-- Labels -->
+        <div class="flex justify-between mt-2 text-xs text-gray-400">
+            <div class="text-left" style="flex: 2">
+                <span class="text-white font-bold">Hardware</span>
+                <br />40%
+            </div>
+            <div class="text-left" style="flex: 1.25">
+                <span class="text-white font-bold">Analytics</span>
+                <br />25%
+            </div>
+            <div class="text-left" style="flex: 1">
+                <span class="text-white font-bold">Marketplace</span>
+                <br />20%
+            </div>
+            <div class="text-left" style="flex: 0.75">
+                <span class="text-white font-bold">Marketing</span>
+                <br />15%
+            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+</div>
+
+<!-- Replace slide 8 with this new version -->
+<div class="slide" id="slide8">
+    <div class="content-container flex flex-col items-center justify-center h-full">
+        <div class="text-4xl font-bold mb-12 glow-text">Competitive Edge</div>
+        
+        <!-- Main Grid Layout -->
+        <div class="grid grid-cols-2 gap-8 w-full max-w-6xl mb-8">
+            <!-- Left Side: Core Advantages -->
+            <div class="space-y-6">
+                <div class="market-card p-6 rounded-lg hover-expand">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-purple-400 rounded-full flex items-center justify-center">
+                            <div class="text-black text-xl font-bold">S</div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-purple-400">Enhanced Security</h3>
+                            <p class="text-sm text-gray-300 mt-2">Multi-layer verification protocol with encrypted transfers</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="market-card p-6 rounded-lg hover-expand">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-purple-400 rounded-full flex items-center justify-center">
+                            <div class="text-black text-xl font-bold">A</div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-purple-400">Mass Adoption</h3>
+                            <p class="text-sm text-gray-300 mt-2">App-free verification with one-tap onboarding</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="market-card p-6 rounded-lg hover-expand">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-purple-400 rounded-full flex items-center justify-center">
+                            <div class="text-black text-xl font-bold">P</div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-purple-400">Physical-Digital Bridge</h3>
+                            <p class="text-sm text-gray-300 mt-2">Seamless NFC integration with instant authenticity checks</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Additional Advantages -->
+            <div class="space-y-6">
+                <div class="market-card p-6 rounded-lg hover-expand">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-purple-400 rounded-full flex items-center justify-center">
+                            <div class="text-black text-xl font-bold">C</div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-purple-400">Cost Efficiency</h3>
+                            <p class="text-sm text-gray-300 mt-2">Layer 2 blockchain with minimal gas fees</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="market-card p-6 rounded-lg hover-expand">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-purple-400 rounded-full flex items-center justify-center">
+                            <div class="text-black text-xl font-bold">U</div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-purple-400">User Experience</h3>
+                            <p class="text-sm text-gray-300 mt-2">Proximity-based detection with intuitive interface</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="market-card p-6 rounded-lg hover-expand">
+                    <div class="flex items-center space-x-4">
+                        <div class="w-12 h-12 bg-purple-400 rounded-full flex items-center justify-center">
+                            <div class="text-black text-xl font-bold">I</div>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold text-purple-400">Infrastructure</h3>
+                            <p class="text-sm text-gray-300 mt-2">Scalable architecture with enterprise-grade security</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bottom Comparison Section -->
+        <div class="accent-border p-6 rounded-lg w-full max-w-6xl">
+            <div class="text-xl font-bold mb-6 text-center">Market Comparison</div>
+            <div class="grid grid-cols-3 gap-8">
+                <div class="comparison-block">
+                    <div class="text-lg font-bold text-purple-400 mb-2">VERA</div>
+                    <div class="relative h-2 bg-gray-800 rounded-full overflow-hidden">
+                        <div class="absolute top-0 left-0 h-full w-full bg-gradient-to-r from-purple-400 to-blue-500"></div>
+                    </div>
+                    <div class="text-sm mt-2">Complete Solution</div>
+                </div>
+
+                <div class="comparison-block">
+                    <div class="text-lg font-bold text-gray-400 mb-2">Competitor A</div>
+                    <div class="relative h-2 bg-gray-800 rounded-full overflow-hidden">
+                        <div class="absolute top-0 left-0 h-full w-1/2 bg-gradient-to-r from-gray-400 to-gray-500"></div>
+                    </div>
+                    <div class="text-sm mt-2">Digital Only</div>
+                </div>
+
+                <div class="comparison-block">
+                    <div class="text-lg font-bold text-gray-400 mb-2">Competitor B</div>
+                    <div class="relative h-2 bg-gray-800 rounded-full overflow-hidden">
+                        <div class="absolute top-0 left-0 h-full w-2/3 bg-gradient-to-r from-gray-400 to-gray-500"></div>
+                    </div>
+                    <div class="text-sm mt-2">Limited Integration</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add these two new slides after slide 8 -->
+<div class="slide" id="slide9">
+    <div class="content-container flex flex-col items-center justify-center h-full">
+        <div class="text-4xl font-bold mb-12 glow-text">Go-to-Market Strategy</div>
+        
+        <div class="grid grid-cols-3 gap-12 w-full max-w-6xl">
+            <!-- Strategy Cards -->
+            <div class="market-card p-8 rounded-lg hover-expand">
+                <div class="flex flex-col items-center text-center">
+                    <div class="text-4xl font-bold text-amber-400 mb-4">01</div>
+                    <div class="w-16 h-16 bg-gradient-to-r from-amber-400 to-amber-500 rounded-full flex items-center justify-center mb-6">
+                        <div class="text-2xl">🤝</div>
+                    </div>
+                    <h3 class="text-xl font-bold text-amber-400 mb-4">Brand Partnerships</h3>
+                    <p class="text-gray-300">Strategic collaborations with luxury brands</p>
+                </div>
+            </div>
+
+            <div class="market-card p-8 rounded-lg hover-expand">
+                <div class="flex flex-col items-center text-center">
+                    <div class="text-4xl font-bold text-amber-400 mb-4">02</div>
+                    <div class="w-16 h-16 bg-gradient-to-r from-amber-400 to-amber-500 rounded-full flex items-center justify-center mb-6">
+                        <div class="text-2xl">💎</div>
+                    </div>
+                    <h3 class="text-xl font-bold text-amber-400 mb-4">Premium Marketplace</h3>
+                    <p class="text-gray-300">Exclusive products and limited editions</p>
+                </div>
+            </div>
+
+            <div class="market-card p-8 rounded-lg hover-expand">
+                <div class="flex flex-col items-center text-center">
+                    <div class="text-4xl font-bold text-amber-400 mb-4">03</div>
+                    <div class="w-16 h-16 bg-gradient-to-r from-amber-400 to-amber-500 rounded-full flex items-center justify-center mb-6">
+                        <div class="text-2xl">⭐</div>
+                    </div>
+                    <h3 class="text-xl font-bold text-amber-400 mb-4">Community Growth</h3>
+                    <p class="text-gray-300">Collector engagement and retention</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="slide" id="slide10">
+    <div class="content-container flex flex-col items-center justify-center h-full">
+        <div class="text-4xl font-bold mb-12 glow-text">5-Year Growth Trajectory</div>
+        
+        <!-- Key Metrics -->
+        <div class="grid grid-cols-3 gap-8 w-full max-w-6xl mb-12">
+            <div class="market-card p-8 rounded-lg text-center">
+                <div class="circular-progress mb-4">
+                    <div class="text-4xl font-bold text-amber-400">21</div>
+                    <div class="text-lg text-gray-300">Brands</div>
+                </div>
+                <div class="text-sm text-amber-400">Strategic Brand Partnerships</div>
+            </div>
+
+            <div class="market-card p-8 rounded-lg text-center">
+                <div class="circular-progress mb-4">
+                    <div class="text-4xl font-bold text-amber-400">50K</div>
+                    <div class="text-lg text-gray-300">Users</div>
+                </div>
+                <div class="text-sm text-amber-400">Active Collectors</div>
+            </div>
+
+            <div class="market-card p-8 rounded-lg text-center">
+                <div class="circular-progress mb-4">
+                    <div class="text-4xl font-bold text-amber-400">$25M</div>
+                    <div class="text-lg text-gray-300">Value</div>
+                </div>
+                <div class="text-sm text-amber-400">Target Valuation</div>
+            </div>
+        </div>
+
+        <!-- Timeline -->
+        <!-- Timeline -->
+<div class="accent-border p-8 rounded-lg w-full max-w-6xl">
+    <h3 class="text-2xl font-bold mb-8 text-amber-400">Growth Roadmap</h3>
+    <div class="relative">
+        <div class="h-2 bg-gradient-to-r from-purple-500 via-purple-400 to-purple-600 w-full flex items-center">
+            <!-- White Dots on the Timeline -->
+            <div class="flex w-full justify-between px-24">
+                <div class="bg-white w-4 h-4 rounded-full"></div>
+                <div class="bg-white w-4 h-4 rounded-full"></div>
+                <div class="bg-white w-4 h-4 rounded-full"></div>
+                <div class="bg-white w-4 h-4 rounded-full"></div>
+                <div class="bg-white w-4 h-4 rounded-full"></div>
+            </div>
+        </div>
+        
+        <!-- Timeline Points -->
+        <div class="grid grid-cols-5 gap-4">
+            <div class="text-center relative">
+                <div class="w-4 h-4 bg-amber-400 rounded-full mx-auto mb-4"></div>
+                <div class="text-sm font-bold text-amber-400">2024</div>
+                <div class="text-xs text-gray-300 mt-2">Platform Launch</div>
+                <div class="text-xs text-gray-400">Pilot Program</div>
+            </div>
+            
+            <div class="text-center relative">
+                <div class="w-4 h-4 bg-amber-400 rounded-full mx-auto mb-4"></div>
+                <div class="text-sm font-bold text-amber-400">2025</div>
+                <div class="text-xs text-gray-300 mt-2">Initial Growth</div>
+                <div class="text-xs text-gray-400">5 Brands</div>
+            </div>
+            
+            <div class="text-center relative">
+                <div class="w-4 h-4 bg-amber-400 rounded-full mx-auto mb-4"></div>
+                <div class="text-sm font-bold text-amber-400">2026</div>
+                <div class="text-xs text-gray-300 mt-2">Market Expansion</div>
+                <div class="text-xs text-gray-400">10 Brands</div>
+            </div>
+            
+            <div class="text-center relative">
+                <div class="w-4 h-4 bg-amber-400 rounded-full mx-auto mb-4"></div>
+                <div class="text-sm font-bold text-amber-400">2027</div>
+                <div class="text-xs text-gray-300 mt-2">Scaling Phase</div>
+                <div class="text-xs text-gray-400">15 Brands</div>
+            </div>
+            
+            <div class="text-center relative">
+                <div class="w-4 h-4 bg-amber-400 rounded-full mx-auto mb-4"></div>
+                <div class="text-sm font-bold text-amber-400">2028</div>
+                <div class="text-xs text-gray-300 mt-2">Market Leadership</div>
+                <div class="text-xs text-gray-400">21 Brands</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    </div>
+</div>
+
+<!-- Add these two new slides after slide 10 -->
+<div class="slide" id="slide11">
+    <div class="content-container flex flex-col items-center justify-center h-full">
+        <div class="text-4xl font-bold mb-12 glow-text">Brand Benefits</div>
+        
+        <div class="grid grid-cols-2 gap-8 w-full max-w-6xl">
+            <!-- Revenue Growth -->
+            <div class="market-card p-8 rounded-lg hover-expand">
+                <div class="flex items-start space-x-4">
+                    <div class="w-12 h-12 bg-gradient-to-r from-purple-400 to-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
+                        <div class="text-xl">📈</div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-purple-400 mb-3">Revenue Protection</h3>
+                        <ul class="space-y-2 text-gray-300">
+                            <li>• Reduce counterfeit losses by up to 35%</li>
+                            <li>• Increase authentic product sales</li>
+                            <li>• New revenue from secondary market royalties</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Market Intelligence -->
+            <div class="market-card p-8 rounded-lg hover-expand">
+                <div class="flex items-start space-x-4">
+                    <div class="w-12 h-12 bg-gradient-to-r from-purple-400 to-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
+                        <div class="text-xl">🎯</div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-purple-400 mb-3">Market Intelligence</h3>
+                        <ul class="space-y-2 text-gray-300">
+                            <li>• Real-time market demand insights</li>
+                            <li>• Customer behavior analytics</li>
+                            <li>• Secondary market price tracking</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Customer Engagement -->
+            <div class="market-card p-8 rounded-lg hover-expand">
+                <div class="flex items-start space-x-4">
+                    <div class="w-12 h-12 bg-gradient-to-r from-purple-400 to-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
+                        <div class="text-xl">🤝</div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-purple-400 mb-3">Direct Customer Connection</h3>
+                        <ul class="space-y-2 text-gray-300">
+                            <li>• Direct communication channel with collectors</li>
+                            <li>• Exclusive drops and pre-releases</li>
+                            <li>• Enhanced customer loyalty programs</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Brand Value -->
+            <div class="market-card p-8 rounded-lg hover-expand">
+                <div class="flex items-start space-x-4">
+                    <div class="w-12 h-12 bg-gradient-to-r from-purple-400 to-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
+                        <div class="text-xl">💎</div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-purple-400 mb-3">Brand Value Enhancement</h3>
+                        <ul class="space-y-2 text-gray-300">
+                            <li>• Strengthen brand authenticity</li>
+                            <li>• Increased consumer trust</li>
+                            <li>• Digital innovation leadership</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="slide" id="slide12">
+    <div class="content-container flex flex-col items-center justify-center h-full">
+        <div class="text-4xl font-bold mb-12 glow-text">Collector Benefits</div>
+        
+        <div class="grid grid-cols-2 gap-8 w-full max-w-6xl">
+            <!-- Authentication -->
+            <div class="market-card p-8 rounded-lg hover-expand">
+                <div class="flex items-start space-x-4">
+                    <div class="w-12 h-12 bg-gradient-to-r from-purple-400 to-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
+                        <div class="text-xl">🔐</div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-purple-400 mb-3">Guaranteed Authenticity</h3>
+                        <ul class="space-y-2 text-gray-300">
+                            <li>• Instant verification within 0.5 meters</li>
+                            <li>• Tamper-proof digital certificates</li>
+                            <li>• Complete ownership history</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Investment Protection -->
+            <div class="market-card p-8 rounded-lg hover-expand">
+                <div class="flex items-start space-x-4">
+                    <div class="w-12 h-12 bg-gradient-to-r from-purple-400 to-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
+                        <div class="text-xl">💰</div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-purple-400 mb-3">Investment Protection</h3>
+                        <ul class="space-y-2 text-gray-300">
+                            <li>• Preserve item value with verified authenticity</li>
+                            <li>• Transparent market pricing</li>
+                            <li>• Secure resale marketplace</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Exclusive Access -->
+            <div class="market-card p-8 rounded-lg hover-expand">
+                <div class="flex items-start space-x-4">
+                    <div class="w-12 h-12 bg-gradient-to-r from-purple-400 to-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
+                        <div class="text-xl">✨</div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-purple-400 mb-3">Premium Experience</h3>
+                        <ul class="space-y-2 text-gray-300">
+                            <li>• Early access to limited editions</li>
+                            <li>• VIP brand events and launches</li>
+                            <li>• Exclusive collector community</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Digital Portfolio -->
+            <div class="market-card p-8 rounded-lg hover-expand">
+                <div class="flex items-start space-x-4">
+                    <div class="w-12 h-12 bg-gradient-to-r from-purple-400 to-blue-500 rounded-full flex items-center justify-center flex-shrink-0">
+                        <div class="text-xl">📱</div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-purple-400 mb-3">Smart Collection Management</h3>
+                        <ul class="space-y-2 text-gray-300">
+                            <li>• Digital portfolio tracking</li>
+                            <li>• One-tap authentication sharing</li>
+                            <li>• Automated value appreciation tracking</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Add this new slide after slide 12 -->
+<div class="slide" id="slide13">
+    <div class="content-container flex flex-col items-center justify-center h-full">
+        <div class="text-4xl font-bold mb-12 glow-text">The Way Forward</div>
+        
+        <!-- Current Status -->
+        <div class="market-card p-8 rounded-lg w-full max-w-6xl mb-8">
+            <div class="flex items-center space-x-4 mb-6">
+                <div class="w-12 h-12 bg-gradient-to-r from-green-500 to-emerald-600 rounded-full flex items-center justify-center flex-shrink-0">
+                    <div class="text-xl">✓</div>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold text-emerald-400">Current Status</h3>
+                    <p class="text-gray-300 mt-2">Fully Functional MVP Ready for Market Testing</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Requirements Grid -->
+        <div class="grid grid-cols-2 gap-8 w-full max-w-6xl mb-12">
+            <div class="market-card p-8 rounded-lg hover-expand">
+                <div class="flex items-start space-x-4">
+                    <div class="w-12 h-12 bg-gradient-to-r from-emerald-400 to-purple-500 rounded-full flex items-center justify-center flex-shrink-0">
+                        <div class="text-xl">🎯</div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-emerald-400 mb-3">Expert Validations</h3>
+                        <p class="text-gray-300">Seeking industry expertise to validate and refine our startup solution</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="market-card p-8 rounded-lg hover-expand">
+                <div class="flex items-start space-x-4">
+                    <div class="w-12 h-12 bg-gradient-to-r from-emerald-400 to-purple-500 rounded-full flex items-center justify-center flex-shrink-0">
+                        <div class="text-xl">👥</div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-emerald-400 mb-3">Team Enhancement</h3>
+                        <p class="text-gray-300">Strategic collaborations to strengthen core capabilities</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="market-card p-8 rounded-lg hover-expand">
+                <div class="flex items-start space-x-4">
+                    <div class="w-12 h-12 bg-gradient-to-r from-emerald-400 to-purple-500 rounded-full flex items-center justify-center flex-shrink-0">
+                        <div class="text-xl">🤝</div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-emerald-400 mb-3">Brand Partnerships</h3>
+                        <p class="text-gray-300">Pilot program and MVP testing with leading luxury brands</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="market-card p-8 rounded-lg hover-expand">
+                <div class="flex items-start space-x-4">
+                    <div class="w-12 h-12 bg-gradient-to-r from-emerald-400 to-purple-500 rounded-full flex items-center justify-center flex-shrink-0">
+                        <div class="text-xl">💰</div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold text-emerald-400 mb-3">Seed Capital</h3>
+                        <p class="text-gray-300">Investment for market expansion and technology scaling</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Contact Section -->
+        <div class="accent-border p-6 rounded-lg w-full max-w-6xl text-center">
+            <div class="text-2xl font-bold mb-4 text-emerald-400">Let's Connect</div>
+            <div class="flex justify-center items-center space-x-8">
+                <div class="flex items-center space-x-2">
+                    <div class="text-lg">Lavya Punjabi</div>
+                    <div class="w-1 h-1 bg-gray-400 rounded-full"></div>
+                    <div class="text-gray-300">Founder</div>
+                </div>
+                <div class="text-gray-300">|</div>
+                <div class="text-gray-300">+91 91067 01294</div>
+                <div class="text-gray-300">|</div>
+                <div class="text-gray-300">lavyapunjabitglp@gmail.com</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    
+    <button onclick="nextSlide()" class="next-btn fixed bottom-8 right-8 px-6 py-3 rounded-full text-white">
+        Next →
+    </button>
+
+    <div class="currentPage fixed bottom-8 left-1/2 text-white transform -translate-x-1/2">
+        
+    </div>
+
+    <button onclick="prevSlide()" class="next-btn fixed bottom-8 left-8 px-6 py-3 rounded-full text-white">
+        ← Prev
+    </button>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>

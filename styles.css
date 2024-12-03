@@ -1,0 +1,203 @@
+.slide {
+    display: none;
+    height: 100vh;
+    background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+    color: #fff;
+    padding: 2rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.slide.active {
+    display: flex;
+    animation: fadeIn 0.5s ease-in;
+}
+
+.accent-border {
+    border: 2px solid #a855f7; /* Updated to purple */
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.3); /* Updated to purple */
+}
+
+.glow-text {
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.market-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.phone-mockup {
+    background: #222;
+    border-radius: 30px;
+    padding: 10px;
+    box-shadow: 0 0 30px rgba(168, 85, 247, 0.2); /* Updated to purple */
+    position: relative;
+}
+
+.phone-screen {
+    background: linear-gradient(145deg, #2a2a2a, #333);
+    border-radius: 30px;
+    overflow: hidden;
+    aspect-ratio: 9/19.5;
+    width: 280px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.problem-item {
+    background: rgba(168, 85, 247, 0.05); /* Updated to purple */
+    border-left: 3px solid #a855f7; /* Updated to purple */
+}
+
+.next-btn {
+    background: linear-gradient(45deg, #a855f7, #7c3aed); /* Updated to purple gradient */
+    transition: all 0.3s ease;
+}
+
+.next-btn:hover {
+    transform: translateX(5px);
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.5); /* Updated to purple */
+}
+
+.content-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.revenue-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+}
+
+.revenue-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(168, 85, 247, 0.1); /* Updated to purple */
+    border-color: rgba(168, 85, 247, 0.3); /* Updated to purple */
+}
+
+.revenue-details {
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.revenue-card:hover .revenue-details {
+    max-height: 200px;
+    margin-top: 1rem;
+}
+
+.revenue-icon {
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.revenue-card:hover .revenue-icon {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.competitive-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.advantage-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 1rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.advantage-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(168, 85, 247, 0.3); /* Updated to purple */
+    box-shadow: 0 10px 30px rgba(168, 85, 247, 0.1); /* Updated to purple */
+}
+
+.advantage-card:hover .advantage-icon {
+    transform: scale(1.1);
+}
+
+.advantage-icon {
+    transition: all 0.3s ease;
+}
+
+.comparison-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 2px;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background: linear-gradient(90deg, #a855f7, #7c3aed); /* Updated to purple gradient */
+    border-radius: 2px;
+    transition: width 1s ease;
+}
+
+.hover-expand {
+    transition: all 0.3s ease;
+}
+
+.hover-expand:hover {
+    transform: translateX(10px);
+    border-color: rgba(168, 85, 247, 0.3); /* Updated to purple */
+    box-shadow: 0 5px 15px rgba(168, 85, 247, 0.1); /* Updated to purple */
+}
+
+.comparison-block {
+    text-align: center;
+}
+
+.circular-progress {
+    width: 120px;
+    height: 120px;
+    border: 4px solid rgba(217, 119, 6, 0.2); 
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.circular-progress::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    right: -4px;
+    bottom: -4px;
+    border-radius: 50%;
+    border: 4px solid transparent;
+    border-top-color: #d97706; /* Updated to purple */
+    animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
