@@ -1,5 +1,5 @@
 let currentSlide = 1;
-const totalSlides = 13;
+const totalSlides = 17;
 
 function nextSlide() {
   const current = document.getElementById(`slide${currentSlide}`);

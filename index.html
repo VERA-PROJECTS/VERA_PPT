@@ -176,8 +176,286 @@
     </div>
 </div>
 
-<!-- Add this new slide after slide 6 in the HTML body -->
+<!-- Web Portal Slide -->
 <div class="slide" id="slide7">
+    <div class="flex flex-col px-16 py-8">
+        <!-- Title Row -->
+        <div class="flex justify-between items-start mb-16">
+            <h1 class="text-6xl font-bold">Company Portal</h1>
+            <div class="bg-[#1A1E23] px-4 py-2 rounded-md text-sm text-gray-300">
+                To exit full screen, press and hold <span class="bg-[#2A2E33] px-2 py-0.5 rounded text-xs">Esc</span>
+            </div>
+        </div>
+
+        <!-- Main Content Area with Perfect Center Alignment -->
+        <div class="flex gap-16">
+            <!-- Left Side Menu - Now vertically centered -->
+            <div class="w-[32%] flex items-center">
+                <div class="space-y-8">
+                    <div class="market-card p-6 rounded-lg relative bg-[#1A1E23]">
+                        <div class="absolute -left-4 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-purple-400 rounded-full flex items-center justify-center text-black font-bold">1</div>
+                        <h3 class="text-xl font-bold text-purple-400">Collection Management</h3>
+                        <p class="text-gray-300 mt-2">Create and manage product collections with detailed specifications and NFT generation</p>
+                    </div>
+
+                    <div class="market-card p-6 rounded-lg relative bg-[#1A1E23]">
+                        <div class="absolute -left-4 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-purple-400 rounded-full flex items-center justify-center text-black font-bold">2</div>
+                        <h3 class="text-xl font-bold text-purple-400">NFT Generation</h3>
+                        <p class="text-gray-300 mt-2">Automated creation of unique digital identifiers for each product</p>
+                    </div>
+
+                    <div class="market-card p-6 rounded-lg relative bg-[#1A1E23]">
+                        <div class="absolute -left-4 top-1/2 transform -translate-y-1/2 w-8 h-8 bg-purple-400 rounded-full flex items-center justify-center text-black font-bold">3</div>
+                        <h3 class="text-xl font-bold text-purple-400">Analytics Dashboard</h3>
+                        <p class="text-gray-300 mt-2">Track product authentications, transfers, and market insights</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Dashboard Preview -->
+            <div class="w-[68%]">
+                <!-- URL Bar -->
+                <div class="flex justify-between items-center text-gray-400 text-sm mb-2">
+                    <span>vera.company/dashboard</span>
+                    <div class="flex items-center gap-2">
+                        <span>Nike</span>
+                        <span>Sales@Nike.com</span>
+                    </div>
+                </div>
+
+                <!-- Main Dashboard -->
+                <div class="bg-white rounded-lg overflow-hidden shadow-lg">
+                    <img 
+                        src="./assets/image web.jpeg" 
+                        alt="Web Portal Dashboard" 
+                        class="w-full"
+                    />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+<!-- Slide 2: NFC Integration -->
+<div class="slide" id="slide8">
+    <div class="content-container flex flex-col items-center justify-center">
+        <div class="text-4xl font-bold mb-12 glow-text">NFC Integration & Connectivity</div>
+        
+        <!-- Process Flow Diagram -->
+        <div class="w-full max-w-6xl mb-12">
+            <div class="market-card p-8 rounded-lg">
+                <div class="flex justify-between items-center relative">
+                    <!-- Connection Line -->
+                    <div class="absolute top-1/2 left-0 right-0 h-1 bg-purple-400 -z-10"></div>
+                    
+                    <!-- Process Steps -->
+                    <div class="text-center w-1/4">
+                        <div class="w-16 h-16 bg-purple-400 rounded-full mx-auto flex items-center justify-center mb-4">
+                            <span class="text-2xl">💻</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-purple-400">Web Portal</h3>
+                        <p class="text-sm text-gray-300 mt-2">NFT Generation</p>
+                    </div>
+
+                    <div class="text-center w-1/4">
+                        <div class="w-16 h-16 bg-purple-400 rounded-full mx-auto flex items-center justify-center mb-4">
+                            <span class="text-2xl">🔗</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-purple-400">NFC Tag</h3>
+                        <p class="text-sm text-gray-300 mt-2">Encrypted Link</p>
+                    </div>
+
+                    <div class="text-center w-1/4">
+                        <div class="w-16 h-16 bg-purple-400 rounded-full mx-auto flex items-center justify-center mb-4">
+                            <span class="text-2xl">📱</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-purple-400">Mobile App</h3>
+                        <p class="text-sm text-gray-300 mt-2">Authentication</p>
+                    </div>
+
+                    <div class="text-center w-1/4">
+                        <div class="w-16 h-16 bg-purple-400 rounded-full mx-auto flex items-center justify-center mb-4">
+                            <span class="text-2xl">✨</span>
+                        </div>
+                        <h3 class="text-lg font-bold text-purple-400">NFT Transfer</h3>
+                        <p class="text-sm text-gray-300 mt-2">Ownership Change</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Key Features -->
+        <div class="grid grid-cols-2 gap-8 w-full max-w-6xl">
+            <div class="market-card p-8 rounded-lg">
+                <h3 class="text-xl font-bold mb-4 text-purple-400">Connection Flow</h3>
+                <ul class="space-y-3 text-gray-300">
+                    <li class="flex items-center">
+                        <div class="w-2 h-2 bg-purple-400 rounded-full mr-3"></div>
+                        <span>NFT Generated → NFC Tag Programmed</span>
+                    </li>
+                    <li class="flex items-center">
+                        <div class="w-2 h-2 bg-purple-400 rounded-full mr-3"></div>
+                        <span>Tag Scanned → NFT Verification</span>
+                    </li>
+                    <li class="flex items-center">
+                        <div class="w-2 h-2 bg-purple-400 rounded-full mr-3"></div>
+                        <span>Ownership Verified → Transfer Enabled</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="market-card p-8 rounded-lg">
+                <h3 class="text-xl font-bold mb-4 text-purple-400">Security Features</h3>
+                <ul class="space-y-3 text-gray-300">
+                    <li class="flex items-center">
+                        <div class="w-2 h-2 bg-purple-400 rounded-full mr-3"></div>
+                        <span>Encrypted Data Communication</span>
+                    </li>
+                    <li class="flex items-center">
+                        <div class="w-2 h-2 bg-purple-400 rounded-full mr-3"></div>
+                        <span>Tamper-Evident Physical Tags</span>
+                    </li>
+                    <li class="flex items-center">
+                        <div class="w-2 h-2 bg-purple-400 rounded-full mr-3"></div>
+                        <span>Secure Ownership Verification</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- User Application Slide -->
+<div class="slide" id="slide9">
+    <div class="flex flex-col h-screen p-16">
+        <!-- Left Side Content -->
+        <div class="flex gap-24 h-[calc(100vh-8rem)]">
+            <div class="w-[30%] flex flex-col">
+                <!-- Title -->
+                <h1 class="text-7xl font-bold mb-16 leading-tight">
+                    User<br/>Application
+                </h1>
+                
+                <!-- Content Cards -->
+                <div class="space-y-8">
+                    <div class="market-card p-6 rounded-lg bg-[#1A1E23]">
+                        <h3 class="text-xl font-bold text-purple-400 mb-2">Authentication Process</h3>
+                        <p class="text-gray-300">Simple scan-and-verify system with instant results</p>
+                    </div>
+
+                    <div class="market-card p-6 rounded-lg bg-[#1A1E23]">
+                        <h3 class="text-xl font-bold text-purple-400 mb-2">Digital Collection</h3>
+                        <p class="text-gray-300">View and manage authenticated products in digital wallet</p>
+                    </div>
+
+                    <div class="market-card p-6 rounded-lg bg-[#1A1E23]">
+                        <h3 class="text-xl font-bold text-purple-400 mb-2">Transfer System</h3>
+                        <p class="text-gray-300">Secure ownership transfer for resale market</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: Phone -->
+            <div class="w-[70%] flex items-center justify-center">
+                <div class="phone-mockup">
+                    <div class="phone-screen">
+                        <video autoplay loop muted class="w-full h-full object-cover">
+                            <source src="./assets/DisplayVideo.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+    <!-- Slide 4: Physical Integration -->
+<div class="slide" id="slide10">
+    <div class="content-container h-full flex flex-col px-12 py-8">
+        <!-- Title centered at top -->
+        <div class="text-5xl font-bold mb-12">Physical Integration</div>
+        
+        <div class="flex-1 flex gap-16 items-start">
+            <!-- Left Side: Service Info -->
+            <div class="w-5/12 flex flex-col h-full">
+                <!-- Service Description Box -->
+                <div class="market-card p-8 rounded-lg mb-12">
+                    <h3 class="text-2xl font-bold mb-4 text-purple-400">Smart Label Service</h3>
+                    <p class="text-xl text-gray-300">
+                        Replacing traditional product labels with NFC-enabled smart tags
+                    </p>
+                </div>
+
+                <!-- Process Flow -->
+                <div class="relative flex justify-between items-center mb-12 px-4">
+                    <!-- Connecting Line -->
+                    <div class="absolute top-1/2 left-4 right-4 h-0.5 bg-purple-400/30"></div>
+                    
+                    <!-- Flow Steps -->
+                    <div class="z-10 text-center">
+                        <div class="w-12 h-12 bg-purple-400/20 border-2 border-purple-400 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <span class="text-lg">📦</span>
+                        </div>
+                        <p class="text-purple-400 text-sm font-medium">Production</p>
+                    </div>
+
+                    <div class="z-10 text-center">
+                        <div class="w-12 h-12 bg-purple-400/20 border-2 border-purple-400 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <span class="text-lg">🏷️</span>
+                        </div>
+                        <p class="text-purple-400 text-sm font-medium">Integration</p>
+                    </div>
+
+                    <div class="z-10 text-center">
+                        <div class="w-12 h-12 bg-purple-400/20 border-2 border-purple-400 rounded-full flex items-center justify-center mx-auto mb-3">
+                            <span class="text-lg">✨</span>
+                        </div>
+                        <p class="text-purple-400 text-sm font-medium">Activation</p>
+                    </div>
+                </div>
+
+                <!-- Bottom Text -->
+                <div class="market-card p-6 rounded-lg">
+                    <p class="text-lg text-gray-300 text-center">
+                        Seamless integration into existing manufacturing process
+                    </p>
+                </div>
+            </div>
+
+            <!-- Right Side: Image Grid -->
+            <div class="w-7/12">
+                <div class="grid grid-cols-2 gap-6">
+                    <div class="market-card p-4 rounded-lg">
+                        <img src="/api/placeholder/400/240" alt="Shoe Tag Integration" class="w-full h-36 object-cover rounded-lg mb-3">
+                        <h3 class="text-lg font-bold text-purple-400">Footwear</h3>
+                        <p class="text-base text-gray-300">Size label enhancement</p>
+                    </div>
+                    
+                    <div class="market-card p-4 rounded-lg">
+                        <img src="/api/placeholder/400/240" alt="Garment Tag Integration" class="w-full h-36 object-cover rounded-lg mb-3">
+                        <h3 class="text-lg font-bold text-purple-400">Garments</h3>
+                        <p class="text-base text-gray-300">Care tag upgrade</p>
+                    </div>
+                    
+                    <div class="market-card p-4 rounded-lg">
+                        <img src="/api/placeholder/400/240" alt="Watch Certificate Integration" class="w-full h-36 object-cover rounded-lg mb-3">
+                        <h3 class="text-lg font-bold text-purple-400">Watches</h3>
+                        <p class="text-base text-gray-300">Digital certificates</p>
+                    </div>
+                    
+                    <div class="market-card p-4 rounded-lg">
+                        <img src="/api/placeholder/400/240" alt="Bag Authentication" class="w-full h-36 object-cover rounded-lg mb-3">
+                        <h3 class="text-lg font-bold text-purple-400">Luxury Bags</h3>
+                        <p class="text-base text-gray-300">Smart authenticity tags</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- Add this new slide after slide 6 in the HTML body -->
+<div class="slide" id="slide11">
     <div class="content-container flex flex-col items-center justify-center">
         <div class="text-4xl font-bold mb-12 glow-text">Revenue Streams</div>
         
@@ -322,7 +600,7 @@
 </div>
 
 <!-- Replace slide 8 with this new version -->
-<div class="slide" id="slide8">
+<div class="slide" id="slide12">
     <div class="content-container flex flex-col items-center justify-center h-full">
         <div class="text-4xl font-bold mb-12 glow-text">Competitive Edge</div>
         
@@ -440,7 +718,7 @@
 </div>
 
 <!-- Add these two new slides after slide 8 -->
-<div class="slide" id="slide9">
+<div class="slide" id="slide13">
     <div class="content-container flex flex-col items-center justify-center h-full">
         <div class="text-4xl font-bold mb-12 glow-text">Go-to-Market Strategy</div>
         
@@ -482,7 +760,7 @@
     </div>
 </div>
 
-<div class="slide" id="slide10">
+<div class="slide" id="slide14">
     <div class="content-container flex flex-col items-center justify-center h-full">
         <div class="text-4xl font-bold mb-12 glow-text">5-Year Growth Trajectory</div>
         
@@ -573,7 +851,7 @@
 </div>
 
 <!-- Add these two new slides after slide 10 -->
-<div class="slide" id="slide11">
+<div class="slide" id="slide15">
     <div class="content-container flex flex-col items-center justify-center h-full">
         <div class="text-4xl font-bold mb-12 glow-text">Brand Benefits</div>
         
@@ -649,7 +927,7 @@
     </div>
 </div>
 
-<div class="slide" id="slide12">
+<div class="slide" id="slide16">
     <div class="content-container flex flex-col items-center justify-center h-full">
         <div class="text-4xl font-bold mb-12 glow-text">Collector Benefits</div>
         
@@ -726,7 +1004,7 @@
 </div>
 
 <!-- Add this new slide after slide 12 -->
-<div class="slide" id="slide13">
+<div class="slide" id="slide17">
     <div class="content-container flex flex-col items-center justify-center h-full">
         <div class="text-4xl font-bold mb-12 glow-text">The Way Forward</div>
         
